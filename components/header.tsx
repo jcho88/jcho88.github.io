@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import Image from "next/image";
-import logo from "../assets/images/hi_icon.png";
 import styles from "./Header.module.css";
+import prefix from "../public/prefix";
 
 const Header: React.FC = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -10,7 +9,11 @@ const Header: React.FC = () => {
     return (
         <div className="pl-2 pr-4 pt-2 pb-4 lg:px-4 lg:pt-4 lg:pb-8">
             <div className="flex flex-row items-center justify-between lg:justify-around">
-                <Image src={logo} alt="logo" width={50} height={50}></Image>
+                <img
+                    src={`${prefix}/../../hi_icon.png`}
+                    alt="logo"
+                    width="50"
+                    height="50"></img>
                 <nav>
                     <section className="flex lg:hidden">
                         <div
