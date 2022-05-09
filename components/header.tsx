@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import styles from "./Header.module.css";
+import styles from "../pages/styles/Header.module.css";
 import prefix from "../public/prefix";
 
 const Header: React.FC = () => {
