@@ -10,7 +10,7 @@ const Header: React.FC = () => {
         <div className="pl-2 pr-4 pt-2 pb-4 lg:px-4 lg:pt-4 lg:pb-8">
             <div className="flex flex-row items-center justify-between lg:justify-around">
                 <img
-                    src={`${prefix}/../../hi_icon.png`}
+                    src={`${prefix}/../../images/hi_icon.png`}
                     alt="logo"
                     width="50"
                     height="50"></img>
