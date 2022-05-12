@@ -6,7 +6,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
             <Header />
-            <Component {...pageProps} />
+            <div>
+                <style global jsx>{`
+                    body {
+                        background: #202023;
+                    }
+                `}</style>
+                <Component {...pageProps} />
+            </div>
         </>
     );
 }

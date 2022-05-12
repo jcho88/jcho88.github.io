@@ -17,5 +17,6 @@ a {
 }
 
 * {
+  color: rgba(255, 255, 255, 0.92);
   box-sizing: border-box;
 }

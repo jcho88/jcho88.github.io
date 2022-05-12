@@ -1,10 +1,11 @@
 import React from "react";
+import styles from "../styles/Shortcuts.module.css";
 
 const ShortCuts: React.FC = () => {
     return (
         <div className="min-w-min px-2">
             Below are the shortcuts that I am currently using.
-            <section className="my-4">
+            <section className={`${styles.shortcuts} my-4`}>
                 <h1 className="font-semibold text-l">Editing</h1>
                 <div className="py-4 lg:px-4">
                     <table className="table-fixed divide-y divide-gray-300 border-collapse border-2 rounded-lg min-w-full">
@@ -15,6 +16,14 @@ const ShortCuts: React.FC = () => {
                             </tr>
                         </thead>
                         <tbody className="text-left divide-gray-500">
+                            <tr>
+                                <td>Select word</td>
+                                <td>⌘D</td>
+                            </tr>
+                            <tr>
+                                <td>Select line</td>
+                                <td>⌘L</td>
+                            </tr>
                             <tr>
                                 <td>Copy line</td>
                                 <td>⇧⌥↓ / ⇧⌥↑</td>
@@ -50,15 +59,15 @@ const ShortCuts: React.FC = () => {
                             </tr>
                             <tr>
                                 <td>Move line</td>
-                                <td>option + cmd + down</td>
+                                <td>⌥↓ / ⌥↑</td>
                             </tr>
                             <tr>
                                 <td>Delete line</td>
-                                <td>option + cmd + down</td>
+                                <td>⇧⌘D</td>
                             </tr>
                             <tr>
-                                <td>Select occurences</td>
-                                <td>option + cmd + down</td>
+                                <td>Select occurences of word</td>
+                                <td>⇧⌘L</td>
                             </tr>
                         </tbody>
                     </table>

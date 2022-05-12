@@ -1,0 +1,15 @@
+.shortcuts th {
+    background-color: #202023;
+}
+
+.shortcuts tr:nth-child(even) {
+    background-color: #202023;
+} 
+
+.shortcuts tr:nth-child(odd) {
+    background-color: #202023;
+}
+
+.shortcuts td {
+    width: 70%;
+}
